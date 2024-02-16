@@ -591,7 +591,7 @@ if (document.URL.includes("quiz")) {
       },
 
       {
-        question: "რისთვის ადიხარ მუზუმში?",
+        question: "რისთვის ადიხარ მუზეუმში?",
         answers: [
           { text: "მზესუმზირის საჭმელად", score: 5 },
           { text: "ძმაკაცი ჩხუბობს", score: 15 },
