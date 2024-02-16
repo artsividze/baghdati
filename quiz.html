@@ -91,17 +91,17 @@
        </main>
 
     
-    <footer class="footer">
-      <p class="footer--p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim dignissimos! Aliquid cumque nostrum esse ab, asperiores nulla iusto quibusdam repellendus nesciunt, tenetur accusamus, commodi laudantium atque id maxime corrupti!
-        <br>
-        <br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, quibusdam?
-      </p>
-      <div class="footer--search">
-      <input type="text" placeholder="Search..">
-        <div class="space"></div>
-        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+  <footer class="footer">
+        <p class="footer--p">
+         შეიქმნა სიმთვრალეში!
+          <br />
+          <br />
+          გუგა,ფიდო,ჭელო
+        </p>
+        <div class="footer--search">
+          <input type="text" placeholder="Search.." />
+          <div class="space"></div>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
         <div class="footer--icons">
           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -112,40 +112,40 @@
           <a href=""><i class="fa-brands fa-x-twitter"></i></a>
           <a href=""><i class="fa-solid fa-comments"></i></a>
         </div>
-        <ul class="footer--ul">
-          <li class="footer--ul__li">Lorem ipsum dolor sit amet.</li>
-          <li class="footer--ul__li">Lorem ipsum dolor sit amet.</li>
-          <li class="footer--ul__li">Lorem ipsum dolor sit amet.</li>
-          <li class="footer--ul__li">Lorem ipsum dolor sit amet.</li>
-        </ul>
-        <hr>
-        <h4>Blog at WordPress.com.</h4>
-    </footer>
-    
-  </div>
-  
-  <script>
-    //        document.addEventListener("DOMContentLoaded", function() {
-      //     var facebookButton = document.querySelector('.facebook');
-      //     facebookButton.addEventListener('click', function() {
-        //         // Get the og:image meta tag by its property attribute
-        //         var ogImageTag = document.querySelector('meta[property="og:image"]');
-        
-//         // Set the new image URL to be used for sharing
-//         var newImageURL = "https://absolute-new.netlify.app/images/quiz-6.jpg";
-
-//         // Update the content attribute of the meta tag with the new image URL
-//         ogImageTag.setAttribute('content', newImageURL);
-//         console.log(ogImageTag);
-
-//         // Open Facebook share dialog with correct window features
-//         var shareURL = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
-//         window.open(shareURL, "_blank", "width=1300,height=700");
-//     });
-// });
-
-
-
-</script>
-<script src="script.js"></script>
-</body>
+        <h1>Welcome to Our Website!</h1>
+        <p>You are visitor number &nbsp  <span id="visitorCount">0</span>.</p>
+        <script>
+          // Function to increment visitor count and update the display
+          function incrementVisitorCount() {
+              // Check if localStorage supports and is available
+              if (typeof(Storage) !== "undefined") {
+                  // Check if we already have a visitor count stored
+                  if (localStorage.getItem("visitorCount")) {
+                      // If so, increment the count
+                      let count = parseInt(localStorage.getItem("visitorCount"));
+                      count++;
+                      localStorage.setItem("visitorCount", count);
+                      document.getElementById("visitorCount").textContent = count;
+                  } else {
+                      // If not, set the count to 1
+                      localStorage.setItem("visitorCount", 1);
+                      document.getElementById("visitorCount").textContent = 1;
+                  }
+              } else {
+                  // Fallback if localStorage is not available
+                  console.log("Sorry, your browser does not support Web Storage...");
+              }
+          }
+          
+          // Call the function when the page loads
+          window.onload = function() {
+              incrementVisitorCount();
+          };
+          </script>
+        <hr />
+        <h4>Blog at Mybaghdati.netlify.app</h4>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
