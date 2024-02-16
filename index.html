@@ -276,13 +276,36 @@
           <a href=""><i class="fa-brands fa-x-twitter"></i></a>
           <a href=""><i class="fa-solid fa-comments"></i></a>
         </div>
-        <ul class="footer--ul">
-          <li class="footer--ul__li">ბაღი ბაღი ბაღნარია</li>
-          <li class="footer--ul__li">ბაღი ბაღი ბაღნარია</li>
-          <li class="footer--ul__li">ბაღი ბაღი ბაღნარია</li>
-          <li class="footer--ul__li">ბაღი ბაღი ბაღნარია</li>
-          <li class="footer--ul__li">ბაღი ბაღი ბაღნარია</li>
-        </ul>
+        <h1>Welcome to Our Website!</h1>
+        <p>You are visitor number &nbsp  <span id="visitorCount">0</span>.</p>
+        <script>
+          // Function to increment visitor count and update the display
+          function incrementVisitorCount() {
+              // Check if localStorage supports and is available
+              if (typeof(Storage) !== "undefined") {
+                  // Check if we already have a visitor count stored
+                  if (localStorage.getItem("visitorCount")) {
+                      // If so, increment the count
+                      let count = parseInt(localStorage.getItem("visitorCount"));
+                      count++;
+                      localStorage.setItem("visitorCount", count);
+                      document.getElementById("visitorCount").textContent = count;
+                  } else {
+                      // If not, set the count to 1
+                      localStorage.setItem("visitorCount", 1);
+                      document.getElementById("visitorCount").textContent = 1;
+                  }
+              } else {
+                  // Fallback if localStorage is not available
+                  console.log("Sorry, your browser does not support Web Storage...");
+              }
+          }
+          
+          // Call the function when the page loads
+          window.onload = function() {
+              incrementVisitorCount();
+          };
+          </script>
         <hr />
         <h4>Blog at Mybaghdati.netlify.app</h4>
       </footer>
@@ -290,6 +313,4 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
 
