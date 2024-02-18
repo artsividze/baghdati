@@ -307,89 +307,24 @@ if (document.URL.includes("quiz")) {
     //   });
     // });
    
-    
-//     document.addEventListener("DOMContentLoaded", function () {
-//   var facebookButton = document.querySelector(".facebook");
-//   facebookButton.addEventListener("click", function () {
-//     let score11 = localStorage.getItem("score1");
-//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-//     var shareDescription = "Check out my quiz result!"; // Description to share along with the image
-//     var shareURL =
-//       "https://www.facebook.com/sharer/sharer.php?u=" +
-//       encodeURIComponent(imageUrl) +
-//       "&quote=" +
-//       encodeURIComponent(shareDescription);
-//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-//   });
-// });
-
-//     document.addEventListener("DOMContentLoaded", function () {
-//   var facebookButton = document.querySelector(".facebook");
-//   facebookButton.addEventListener("click", function () {
-//     let score11 = localStorage.getItem("score1");
-//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-//     var pageUrl = window.location.href; // Current page URL
-//     var shareDescription = "Check out my quiz result!"; // Description to share along with the image
-//     var shareURL =
-//       "https://www.facebook.com/sharer/sharer.php?u=" +
-//       encodeURIComponent(pageUrl) +
-//       "&quote=" +
-//       encodeURIComponent(shareDescription) +
-//       "&picture=" +
-//       encodeURIComponent(imageUrl);
-//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-//   });
-// });
-
-
-//     document.addEventListener("DOMContentLoaded", function () {
-//   var facebookButton = document.querySelector(".facebook");
-//   facebookButton.addEventListener("click", function () {
-//     let score11 = localStorage.getItem("score1");
-//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-//     var pageUrl = window.location.href; // Current page URL
-//     var shareDescription = "Check out my quiz result!"; // Description to share along with the image
-//     var shareURL =
-//       "https://www.facebook.com/sharer/sharer.php?u=" +
-//       encodeURIComponent(pageUrl) +
-//       "&quote=" +
-//       encodeURIComponent(shareDescription) +
-//       "&picture=" +
-//       encodeURIComponent(imageUrl);
-//     // Open the Facebook sharing dialog
-//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-//     // You can also try to preload the image to get its actual dimensions
-//     var img = new Image();
-//     img.onload = function() {
-//       // Adjust the width and height if needed
-//       var imgWidth = this.width;
-//       var imgHeight = this.height;
-//       console.log("Image width:", imgWidth, "Image height:", imgHeight);
-//     };
-//     img.src = imageUrl;
-//   });
-// startQuiz()});
-
-
     document.addEventListener("DOMContentLoaded", function () {
   var facebookButton = document.querySelector(".facebook");
   facebookButton.addEventListener("click", function () {
     let score11 = localStorage.getItem("score1");
     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-    console.log(imageUrl);
+    var websiteUrl = "https://yourwebsite.com"; // Actual website link
+    var shareDescription = "Check out my quiz result!"; // Description to share along with the image
     var shareURL =
       "https://www.facebook.com/sharer/sharer.php?u=" +
+      encodeURIComponent(websiteUrl) +
+      "&quote=" +
+      encodeURIComponent(shareDescription) +
+      "&picture=" +
       encodeURIComponent(imageUrl);
     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-    console.log(shareURL);
-
-    // Set value in local storage
-    localStorage.setItem("num", 1);
-
-    // Navigate user to the specified URL
-    window.location.href = "https://mybaghdati.info/quiz#quiz-1";
   });
 });
+
   }
 
   function quiz2() {
