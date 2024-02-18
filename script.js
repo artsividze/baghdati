@@ -308,23 +308,40 @@ if (document.URL.includes("quiz")) {
     // });
    
   
+// document.addEventListener("DOMContentLoaded", function () {
+//   var facebookButton = document.querySelector(".facebook");
+//   facebookButton.addEventListener("click", function () {
+//     let score11 = localStorage.getItem("score1");
+//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
+//     console.log(imageUrl);
+//     var websiteUrl = "https://mybaghdati.info/"; // Your website URL
+//     var shareURL =
+//       "https://www.facebook.com/sharer/sharer.php?u=" +
+//       encodeURIComponent(websiteUrl) +
+//       "&picture=" +
+//       encodeURIComponent(imageUrl);
+//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
+//     console.log(shareURL);
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   var facebookButton = document.querySelector(".facebook");
   facebookButton.addEventListener("click", function () {
     let score11 = localStorage.getItem("score1");
     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-    console.log(imageUrl);
     var websiteUrl = "https://mybaghdati.info/"; // Your website URL
     var shareURL =
       "https://www.facebook.com/sharer/sharer.php?u=" +
       encodeURIComponent(websiteUrl) +
+      "&quote=" +
+      encodeURIComponent("Check out my quiz result!") +
       "&picture=" +
       encodeURIComponent(imageUrl);
-    window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-    console.log(shareURL);
+    window.open(shareURL, "Share on Facebook", "width=600,height=300");
   });
 });
-
+    
   }
 
   function quiz2() {
