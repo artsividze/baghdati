@@ -512,25 +512,25 @@ if (document.URL.includes("quiz")) {
     });
     startQuiz();
 
-    document.addEventListener("DOMContentLoaded", function () {
-      var facebookButton = document.querySelector(".facebook");
-      facebookButton.addEventListener("click", function () {
-        let score22 = localStorage.getItem("score2");
-        if (score22 < 5) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-2-1.jpg`;
-        }
-        // URL of the image to share
-        else {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-2-2.jpg`;
-        }
-        console.log(imageUrl);
-        var shareURL =
-          "https://www.facebook.com/sharer/sharer.php?u=" +
-          encodeURIComponent(imageUrl);
-        window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-        console.log(shareURL);
-      });
-    });
+   document.addEventListener("DOMContentLoaded", function () {
+  var facebookButton = document.querySelector(".facebook");
+  facebookButton.addEventListener("click", function () {
+    let score11 = localStorage.getItem("score1");
+    var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
+    console.log(imageUrl);
+    var websiteUrl = "https://mybaghdati.info/"; // Your website URL
+    var shareDescription = "Check out my quiz result!"; // Description to share along with the image
+    var shareURL =
+      "https://www.facebook.com/sharer/sharer.php?u=" +
+      encodeURIComponent(websiteUrl) +
+      "&quote=" +
+      encodeURIComponent(shareDescription) +
+      "&picture=" +
+      encodeURIComponent(imageUrl);
+    window.open(shareURL, "Share on Facebook", "width=1050,height=850");
+    console.log(shareURL);
+  });
+});
   }
   function quiz3() {
     h1.textContent = "რა ტიპის ბაღდათელი ხარ?";
