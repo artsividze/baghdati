@@ -86,9 +86,9 @@ main {
         justify-content: center;
         background-color: #fff;
         color: black; }
-        main .content .quiz-item:last-of-type h1 {
+        main .content .quiz-item:last-of-type h2 {
           margin-bottom: 4rem; }
-      main .content .quiz #item-3 h1 {
+      main .content .quiz #item-3 h2 {
         width: 100%;
         float: left; }
       main .content .quiz a {
@@ -100,7 +100,7 @@ main {
         background-size: cover; }
       main .content .quiz p {
         color: black; }
-      main .content .quiz h1 {
+      main .content .quiz h2 {
         margin: 0;
         line-height: 2rem;
         color: black;
@@ -135,7 +135,7 @@ main {
       main .store p span {
         color: black;
         font-size: 1.3rem; }
-    main .store h1 {
+    main .store h2 {
       line-height: 2rem;
       margin-top: 0rem;
       margin-bottom: 2rem; }
