@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var facebookButton = document.querySelector(".facebook");
       facebookButton.addEventListener("click", function () {
         let score22 = localStorage.getItem("score2");
-        var imageUrl = `https://absolute-new.netlify.app/images/quiz-2-${score11}.jpg`; // URL of the image to share
+        var imageUrl = `https://absolute-new.netlify.app/images/quiz-2-${score22}.jpg`; // URL of the image to share
         console.log(imageUrl);
         var shareURL =
           "https://www.facebook.com/sharer/sharer.php?u=" +
