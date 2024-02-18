@@ -293,55 +293,21 @@ if (document.URL.includes("quiz")) {
       }
     });
     startQuiz();
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   var facebookButton = document.querySelector(".facebook");
-    //   facebookButton.addEventListener("click", function () {
-    //     let score11 = localStorage.getItem("score1");
-    //     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-    //     console.log(imageUrl);
-    //     var shareURL =
-    //       "https://www.facebook.com/sharer/sharer.php?u=" +
-    //       encodeURIComponent(imageUrl);
-    //     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-    //     console.log(shareURL);
-    //   });
-    // });
+    document.addEventListener("DOMContentLoaded", function () {
+      var facebookButton = document.querySelector(".facebook");
+      facebookButton.addEventListener("click", function () {
+        let score11 = localStorage.getItem("score1");
+        var imageUrl = `myBaghdati.info/images/quiz-1-${score11}.jpg`; // URL of the image to share
+        console.log(imageUrl);
+        var shareURL =
+          "https://www.facebook.com/sharer/sharer.php?u=" +
+          encodeURIComponent(imageUrl);
+        window.open(shareURL, "Share on Facebook", "width=1050,height=850");
+        console.log(shareURL);
+      });
+    });
    
   
-// document.addEventListener("DOMContentLoaded", function () {
-//   var facebookButton = document.querySelector(".facebook");
-//   facebookButton.addEventListener("click", function () {
-//     let score11 = localStorage.getItem("score1");
-//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-//     console.log(imageUrl);
-//     var websiteUrl = "https://mybaghdati.info/"; // Your website URL
-//     var shareURL =
-//       "https://www.facebook.com/sharer/sharer.php?u=" +
-//       encodeURIComponent(websiteUrl) +
-//       "&picture=" +
-//       encodeURIComponent(imageUrl);
-//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
-//     console.log(shareURL);
-//   });
-// });
-
-document.addEventListener("DOMContentLoaded", function () {
-  var facebookButton = document.querySelector(".facebook");
-  facebookButton.addEventListener("click", function () {
-    let score11 = localStorage.getItem("score1");
-    var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
-    var websiteUrl = "https://mybaghdati.info/"; // Your website URL
-    var shareURL =
-      "https://www.facebook.com/sharer/sharer.php?u=" +
-      encodeURIComponent(websiteUrl) +
-      "&quote=" +
-      encodeURIComponent("Check out my quiz result!") +
-      "&picture=" +
-      encodeURIComponent(imageUrl);
-    window.open(shareURL, "Share on Facebook", "width=600,height=300");
-  });
-});
-    
   }
 
   function quiz2() {
@@ -533,7 +499,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var facebookButton = document.querySelector(".facebook");
       facebookButton.addEventListener("click", function () {
         let score22 = localStorage.getItem("score2");
-        var imageUrl = `https://absolute-new.netlify.app/images/quiz-2-${score22}.jpg`; // URL of the image to share
+        var imageUrl = `myBaghdati.info/images/quiz-2-${score22}.jpg`; // URL of the image to share
         console.log(imageUrl);
         var shareURL =
           "https://www.facebook.com/sharer/sharer.php?u=" +
@@ -726,15 +692,15 @@ document.addEventListener("DOMContentLoaded", function () {
       facebookButton.addEventListener("click", function () {
         let score33 = localStorage.getItem("score3");
         if (score33 <= 140 && score33 >= 110) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-3-1.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-3-1.jpg`;
         }
         // URL of the image to share
         else if (score33 <= 110 && score33 >= 80) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-3-2.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-3-2.jpg`;
         } else if (score33 <= 80 && score33 >= 40) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-3-3.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-3-3.jpg`;
         } else {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-3-4.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-3-4.jpg`;
         }
         console.log(imageUrl);
         var shareURL =
@@ -925,15 +891,15 @@ document.addEventListener("DOMContentLoaded", function () {
       facebookButton.addEventListener("click", function () {
         let score44 = localStorage.getItem("score3");
         if (score44 <= 140 && score44 >= 110) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-4-1.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-4-1.jpg`;
         }
         // URL of the image to share
         else if (score44 <= 110 && score44 >= 80) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-4-2.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-4-2.jpg`;
         } else if (score44 <= 80 && score44 >= 40) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-4-3.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-4-3.jpg`;
         } else {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-4-4.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-4-4.jpg`;
         }
         console.log(imageUrl);
         var shareURL =
@@ -1122,15 +1088,15 @@ document.addEventListener("DOMContentLoaded", function () {
       facebookButton.addEventListener("click", function () {
         let score55 = localStorage.getItem("score3");
         if (score55 <= 140 && score55 >= 110) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-5-1.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-5-1.jpg`;
         }
         // URL of the image to share
         else if (score55 <= 110 && score55 >= 80) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-5-2.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-5-2.jpg`;
         } else if (score55 <= 80 && score55 >= 40) {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-5-3.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-5-3.jpg`;
         } else {
-          var imageUrl = `https://absolute-new.netlify.app/images/quiz-5-4.jpg`;
+          var imageUrl = `myBaghdati.info/images/quiz-5-4.jpg`;
         }
         console.log(imageUrl);
         var shareURL =
