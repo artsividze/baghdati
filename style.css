@@ -114,9 +114,7 @@ main {
         margin-bottom: 0.4rem; }
   main .video {
     margin-bottom: 4rem; }
-    main .video iframe {
-      width: 100%;
-      height: 200px; }
+   
   main .store {
     width: 100%; }
     main .store-items {
