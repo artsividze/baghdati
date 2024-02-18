@@ -306,17 +306,37 @@ if (document.URL.includes("quiz")) {
     //     console.log(shareURL);
     //   });
     // });
+   
+    
+//     document.addEventListener("DOMContentLoaded", function () {
+//   var facebookButton = document.querySelector(".facebook");
+//   facebookButton.addEventListener("click", function () {
+//     let score11 = localStorage.getItem("score1");
+//     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
+//     var shareDescription = "Check out my quiz result!"; // Description to share along with the image
+//     var shareURL =
+//       "https://www.facebook.com/sharer/sharer.php?u=" +
+//       encodeURIComponent(imageUrl) +
+//       "&quote=" +
+//       encodeURIComponent(shareDescription);
+//     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
+//   });
+// });
+
     document.addEventListener("DOMContentLoaded", function () {
   var facebookButton = document.querySelector(".facebook");
   facebookButton.addEventListener("click", function () {
     let score11 = localStorage.getItem("score1");
     var imageUrl = `https://absolute-new.netlify.app/images/quiz-1-${score11}.jpg`; // URL of the image to share
+    var pageUrl = window.location.href; // Current page URL
     var shareDescription = "Check out my quiz result!"; // Description to share along with the image
     var shareURL =
       "https://www.facebook.com/sharer/sharer.php?u=" +
-      encodeURIComponent(imageUrl) +
+      encodeURIComponent(pageUrl) +
       "&quote=" +
-      encodeURIComponent(shareDescription);
+      encodeURIComponent(shareDescription) +
+      "&picture=" +
+      encodeURIComponent(imageUrl);
     window.open(shareURL, "Share on Facebook", "width=1050,height=850");
   });
 });
