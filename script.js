@@ -368,7 +368,7 @@ if (document.URL.includes("quiz")) {
     };
     img.src = imageUrl;
   });
-});
+startQuiz()});
   }
 
   function quiz2() {
